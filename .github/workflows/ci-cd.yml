@@ -12,4 +12,4 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Build Docker Image
-        run: docker build -t exp9-app ./client
+        run: docker build -t exp9-app -f ./client/Dockerfile ./client
